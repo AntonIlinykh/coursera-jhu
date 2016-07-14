@@ -66,6 +66,7 @@ h1 {
 	.col-md-10 { width: 83.33%; }
 	.col-md-11 { width: 91.66%; }
 	.col-md-12 { width: 100%; }
+	.title--sushi {width: 20%;}
 }
 @media (min-width: 992px) {
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, 
