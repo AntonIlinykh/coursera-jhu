@@ -1,0 +1,26 @@
+.container-fluid {
+	max-width: 1000px;
+}
+.menu-hr {
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
+}
+h1.text-center {
+	color: #4e4e4e;
+	font-size: 1.7em;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.card {
+	background-color: #eee;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 1.5em;
+}
+@media screen and (max-width: 767px) {
+	.card {
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+}
