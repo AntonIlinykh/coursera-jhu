@@ -18,3 +18,5 @@ function catOutput() {
 		document.querySelector("#cat-container").innerHTML = "Попробуй ещё раз";
 	}
 }
+
+// Processing form
