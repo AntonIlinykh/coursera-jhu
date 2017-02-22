@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css">
 	<title>Document</title>
 </head>
-<body>
+<body id="body">
 	<!-- <h1>Lecture 53</h1>
 <p>Make me say hello <input id="name-value" type="text"> <button onclick="outputGreeting()">Press me!</button>
 </p>
@@ -20,26 +20,19 @@
 <form action="handler.php" method="POST">
 	<p>Форма</p>
 	<label for="firstName">Введите имя</label>
-	<input type="text" name="firstName">
+	<input type="text" name="firstName" id="keyPlace">
 	<input type="submit">
 </form>
 
-    <script src="https://form.jotformeu.com/static/feedback2.js?3.3.REV" type="text/javascript">
-      var JFL_62964831275363 = new JotformFeedback({
-        formId: '62964831275363',
-        base: 'https://form.jotformeu.com/',
-        windowTitle: 'Запись на игру',
-        background: '#FFA500',
-        fontColor: '#FFFFFF',
-        type: 'false',
-        height: 500,
-        width: 700,
-        openOnLoad: false
-      });
-    </script>
-      <a class="btn lightbox-62964831275363" style="margin-top: 16px">
-        Запись на игру
-      </a>
+<div>
+  <input type="text" id="sx">
+  <input type="text" id="sy">
+  <input type="text" id="px">
+  <input type="text" id="py">
+  <input type="text" id="cx">
+  <input type="text" id="cy">
+  <p>Клавиша</p> <span id="key"></span>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
