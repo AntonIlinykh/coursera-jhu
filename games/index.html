@@ -29,8 +29,8 @@
 
 	<!-- Load CSS Start -->
 	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
-	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
 	<!-- Load CSS End -->
 
 	<!-- Load CSS Compiled without JS -->
@@ -43,9 +43,17 @@
 
 <body>
 	<header class="navbar-header">
-		<button class="toggle-button"><i class="material-icons">menu</i></button>
-		<span><img src="img/logo.png" alt="Сергей Иванов"></span>
-		<button class="assignment-button"><i class="material-icons">assignment_turned_in</i></button>
+		<button class="toggle-button js-menu-show header__menu-toggle dissapearing-el-992"><i class="material-icons">menu</i></button>
+		<img src="img/logo.png" alt="Сергей Иванов" class="logo">
+		<button class="assignment-button dissapearing-el-992"><i class="material-icons">assignment_turned_in</i></button>
+		<nav class="desktop-nav">
+			<ul>
+				<li>Главная</li>
+				<li>Игры</li>
+				<li>Специальные преложения</li>
+				<li>Расписание</li>
+			</ul>
+		</nav>
 	</header>
   <main id="panel">
 		<header class="hero-header">
@@ -54,7 +62,7 @@
 					<p class="slogan"><span class="fz-23">Жизнь - это игра</span><br><span class="fz-19">пришло ваше время</span><br><span class="fz-31">выигрывать</span></p>
 					<p class="dates">Томск | 19 - 23 апреля</p>
 					<!-- <img src="img/dates.png" alt="Томск, 19-23 апреля"> -->
-					<button class="reserve-button">Забронировать моё место</button>
+					<button class="reserve-button">Забронировать место</button>
 				</div>
 			</div>
 			<div class="introduction">
@@ -67,16 +75,20 @@
 		</header>
 
 	</main>
-	<nav id="menu">
-		<ul>
-			<li><a href=""><button><i class="material-icons">home</i></button>Главная</a></li>
-			<li><a href=""><button><i class="material-icons">home</i></button>Игры</a></li>
-			<li><a href=""><button><i class="material-icons">home</i></button>Акции</a></li>
-			<li><a href=""><button><i class="material-icons">home</i></button>О Сергее</a></li>
-			<li><a href=""><button><i class="material-icons">home</i></button>Отзывы</a></li>
-			<li><a href=""><button><i class="material-icons">home</i></button>Расписание</a></li>
-		</ul>
-  </nav>
+	<aside class="js-side-nav side-nav">
+		<nav class="js-side-nav-container side-nav__container">
+			<button class="js-menu-hide side-nav__hide material-icons">close</button>
+			<header class="side-nav__header">
+				Меню
+			</header>
+			<ul class="side-nav__content">
+				<li>One</li>
+				<li>Two</li>
+				<li>Three</li>
+				<li>Four</li>
+			</ul>
+		</nav>
+	</aside>
 	<div class="hidden"></div>
 
 

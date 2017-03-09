@@ -26,6 +26,7 @@
   box-shadow: 0 2px 4px rgba(0,0,0,0.4);
   background: #00A651;
   color: #FFF;
+  position: fixed;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -50,6 +51,7 @@
   height: 100%;
   overflow: hidden;
   pointer-events: none;
+  z-index: 10
 }
 
 .side-nav--visible {
@@ -113,11 +115,10 @@
 }
 
 .side-nav__header {
-  height: 200px;
   background: #00A651;
   color: #FFF;
   display: flex;
-  padding: 16px;
+  padding: 9px 16px 9px 60px;
   align-items: flex-end;
   font-size: 24px;
 }
