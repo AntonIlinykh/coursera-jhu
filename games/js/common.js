@@ -92,6 +92,18 @@ slideout
 		});
 	};
 
+	var selGame = $('#select-game');
+	selGame.on('change', function () {
+		var gameIndex = selGame.val();
+		console.log(gameIndex);
+		var result = $('#result')
+		if (gameIndex == 1) {
+				result.text('4900');
+		}
+		if (gameIndex == 2) {
+				result.text('2900');
+		}
+	});
 
 
 	//E-mail Ajax Send
