@@ -80,7 +80,7 @@ slideout
 	});
 
 	$('.more-button').on('click', function() {
-		$(this).prev('.more-description').slideToggle();
+		$(this).parent().prev('.more-description').slideToggle();
 	});
 
 	slideout.disableTouch();
