@@ -1,0 +1,171 @@
+@import "bourbon"
+@import "vars.sass"
+@import "../app/libs/normalize-css/normalize"
+
+*
+	box-sizing: border-box
+body
+	height: 100%
+	width: 100%
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "RobotoRegular", sans-serif
+	overflow-x: hidden
+	background-color: #fafafa
+
+.slideout-menu
+	position: fixed
+	top: 0
+	bottom: 0
+	width: 256px
+	min-height: 100vh
+	overflow-y: scroll
+	-webkit-overflow-scrolling: touch
+	z-index: 0
+	display: none
+
+
+.slideout-menu-left
+	left: 0
+
+
+.slideout-menu-rght
+	right: 0
+
+
+.slideout-panel
+	position: relative
+	z-index: 1
+	will-change: transform
+	background-color: #FFF /* A background-color is required */
+	min-height: 100vh
+
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel
+	overflow: hidden
+
+
+.slideout-open .slideout-menu
+	display: block
+
+
+.hidden, .mine
+	display: none
+
+.panel::before
+	content: ''
+	display: block
+	background-color: rgba(0,0,0,0)
+	transition: background-color 0.5s ease-in-out
+
+
+.panel-open::before
+	position: absolute
+	top: 0
+	bottom: 0
+	width: 100%
+	background-color: rgba(0,0,0,.5)
+	z-index: 99
+
+
+
+.navbar-header
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: darken($main-color, 1%)
+	color: #000
+	height: 56px
+	z-index: 10
+	line-height: 56px
+	.logo
+		margin: auto 0 0 35px
+		width: 227px
+	.fa-bars
+		color: #fff
+		font-size: 24px
+	.toggle-button
+		margin: 0
+		position: absolute
+		left: 4px
+		top: 6px
+
+button
+	border: none
+	outline: none
+#menu,.navbar-header
+	button
+		background: none
+		width: 48px
+		height: 48px
+		padding: 0
+		margin: 0 4px 0 4px
+
+
+
+.hero-header
+	min-height: 480px
+.hero-image
+	position: relative
+	margin-top: 56px
+	height: 295px
+	background-image: url(../img/background-image-xsmall.jpg)
+	background-size: cover
+	background-position: left
+	display: flex
+	flex-direction: row
+.hero-text
+	width: 59%
+	height: auto
+	margin: 45px 16px 16px auto
+	display: flex
+	flex-flow: column nowrap
+	justify-content: flex-start
+	align-items: center
+	p, button
+		color: #fff
+		text-align: center
+.slogan
+	margin-top: 10px
+	margin-bottom: auto
+	width: 180px
+.slogan, .dates
+	opacity: .7
+.dates, .reserve-button
+	text-transform: uppercase
+	margin: 0
+.reserve-button, .more-button
+	background-color: $main-color
+	border-radius: 2px
+	padding: 9px 13px
+.reserve-button
+	font-size: 12.5px
+	font-family: RobotoMedium,sans-serif
+	color: #fff
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
+.introduction
+	h1, p
+		opacity: .87
+	h1
+		font-size: 22px
+	p
+		text-align: justify
+h1, h2
+	text-align: center
+h1
+	margin: 10px 0
+.container
+	margin: 16px auto
+	padding: 6px 16px
+	width: auto
+	max-width: 650px
