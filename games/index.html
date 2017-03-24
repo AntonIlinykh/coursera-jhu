@@ -17,7 +17,6 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 		<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
 	<style></style>
@@ -44,9 +43,8 @@
 <body>
 
 	<header class="navbar-header">
-		<button class="sidebar-toggle toggle-button js-menu-show header__menu-toggle"><i class="material-icons">menu</i></button>
+		<button class="sidebar-toggle toggle-button js-menu-show header__menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
 		<img src="img/logo.png" alt="Сергей Иванов" class="logo">
-		<button class="assignment-button"><i class="material-icons">assignment_turned_in</i></button>
 	</header>
 	<main id="panel" class="panel">
 		<header class="hero-header">
@@ -164,7 +162,7 @@
 						<div class="discount-and-price">
 							<span class="discount">-20%</span><span class="prices"><span class="old-price">6000 руб.</span><span class="new-price">4900 руб.</span></span>
 						</div>
-						<button class=" reserve-button">Купить со скидкой<i class="appealing-blink"></i></button>
+						<button class="animate-button reserve-button">Купить со скидкой<i class="appealing-blink"></i></button>
 					</div>
 					<div class="card enlightened">
 						<h4 class="bundle-name">Просветленный</h4>
@@ -208,11 +206,19 @@
 				</article>
 				<article>
 					<h3 class="section-header">Отзывы</h3>
-					<div class="feedback">
-						<img src="img/grandma.jpg" alt="">
-						<p class="feedback-content">“Просто охэрэнно! Лучшее приключение, что я переживала в своей головокружительной жизни! ”</p>
-						<p class="feedback-name">Ирина Андреевна</p>
-						<p class="feedback-profession">Кинорежиссёр</p>
+					<div class="feedbacks  owl-carousel">
+						<div class="feedback item">
+							<img src="img/grandma.jpg" alt="">
+							<p class="feedback-content"><q>Просто охэрэнно! Лучшее приключение, что я переживала в своей головокружительной жизни!</q></p>
+							<p class="feedback-name">Ирина Андреевна</p>
+							<p class="feedback-profession">Кинорежиссёр</p>
+						</div>
+						<div class="feedback item">
+							<img src="img/grandma.jpg" alt="">
+							<p class="feedback-content"><q>Просто охэрэнно! Лучшее приключение, что я переживала в своей головокружительной жизни!</q></p>
+							<p class="feedback-name">Ирина Андреевна</p>
+							<p class="feedback-profession">Кинорежиссёр</p>
+						</div>
 					</div>
 				</article>
 			</section>

@@ -105,6 +105,15 @@ slideout
 		}
 	});
 
+	$(document).ready(function(){
+  	$('.owl-carousel').owlCarousel({
+			nav:true,
+			items:1,
+			loop: true,
+			navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
+		});
+	});
+
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
