@@ -15,6 +15,9 @@ body
 	overflow-x: hidden
 	background-color: #fafafa
 
+.hidden, .mine
+	display: none
+
 .slideout-menu
 	position: fixed
 	top: 0
@@ -25,44 +28,27 @@ body
 	-webkit-overflow-scrolling: touch
 	z-index: 0
 	display: none
-
-
 .slideout-menu-left
 	left: 0
-
-
 .slideout-menu-rght
 	right: 0
-
-
 .slideout-panel
 	position: relative
 	z-index: 1
 	will-change: transform
 	background-color: #FFF /* A background-color is required */
 	min-height: 100vh
-
-
 .slideout-open,
 .slideout-open body,
 .slideout-open .slideout-panel
 	overflow: hidden
-
-
 .slideout-open .slideout-menu
 	display: block
-
-
-.hidden, .mine
-	display: none
-
 .panel::before
 	content: ''
 	display: block
 	background-color: rgba(0,0,0,0)
 	transition: background-color 0.5s ease-in-out
-
-
 .panel-open::before
 	position: absolute
 	top: 0
@@ -70,8 +56,6 @@ body
 	width: 100%
 	background-color: rgba(0,0,0,.5)
 	z-index: 99
-
-
 
 .navbar-header
 	box-shadow: 0 0 10px rgba(0,0,0,0.5)
@@ -85,15 +69,11 @@ body
 	height: 56px
 	z-index: 10
 	line-height: 56px
-	// .outer-wrapper
-	// 	width: 1px
-	// 	margin: auto
-	// 	overflow: visible
 	.inner-wrapper
 		width: 220px
 		margin: auto
 		position: relative
-		left: 18px
+		left: 22px
 		top: 16px
 	.logo
 		width: 100%
@@ -116,8 +96,6 @@ button
 		height: 48px
 		padding: 0
 		margin: 0 4px 0 4px
-
-
 
 .hero-header
 	min-height: 480px
