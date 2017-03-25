@@ -139,7 +139,6 @@
 	margin: 5px
 	border: none
 	overflow: visible
-
 	input, select
 		box-sizing: border-box
 		width: 100%
@@ -152,7 +151,6 @@
 		outline: none
 		cursor: text
 		background-color: transparent
-
 	hr
 		content: ''
 		display: block
@@ -171,12 +169,9 @@
 		transform: scaleX(0)
 		visibility: hidden
 		z-index: 10
-
 	input:focus ~ hr, select:focus ~ hr
 		transform: scaleX(1)
 		visibility: visible
-
-
 	label
 		position: absolute
 		top: 10px
@@ -186,7 +181,6 @@
 		transform-origin: 0 -150%
 		transition: transform 300ms ease
 		pointer-events: none
-
 	input:focus ~ label,
 	input:valid ~ label,
 	select:focus ~ label,
@@ -235,10 +229,12 @@
 	display: flex
 	flex-flow: row wrap
 	justify-content: space-around
-	margin-bottom: 56px
+.cards, .feedbacks
+	margin-bottom: 26px
 .card, .feedback
 	border-radius: 10px
 	position: relative
+.card, .feedback, .map
 	margin-top: 26px
 .card
 	padding: 20px 36px
@@ -259,11 +255,12 @@
 	margin-top: 0
 	position: absolute
 	top: 46px
+.bundle-items, .schedule, .schedule-subitem
+	list-style: none
 .bundle-items
 	font-size: 16px
 	margin: 38px 0 auto 0
 	padding: 0
-	list-style: none
 	li
 		border-bottom: 1px solid #bbb
 		opacity: .7
@@ -368,8 +365,13 @@
 .feedback-profession
 	font-size: 12px
 	bottom: 10px
-
-
+.schedule
+	padding-left: 13px
+.schedule-subitem
+	padding-left: 0
+.bottom-lead-button
+	margin: auto
+	display: block
 
 
 //ALWAYS END
