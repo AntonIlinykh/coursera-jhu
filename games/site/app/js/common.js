@@ -90,17 +90,21 @@ $(function() {
 		console.log(gameIndex);
 		var result = $('#result')
 		if (gameIndex == 1) {
-			result.text('Итого: 4900 руб.');
+			result.html('Итого: <span class="line-through">6000</span> 4950 <i class="fa fa-rub" aria-hidden="true"></i>');
 		} else if (gameIndex == 2) {
-			result.text('Итого: 4900 руб.');
+			result.html('Итого: <span class="line-through">6000</span> 4950 <i class="fa fa-rub" aria-hidden="true"></i>');
 		} else if (gameIndex == 3) {
-			result.text('Итого: 3800 руб.');
+			result.html('Итого: <span class="line-through">3800</span> 2950 <i class="fa fa-rub" aria-hidden="true"></i>');
 		} else if (gameIndex == 4) {
-			result.text('Итого: 1900 руб.');
+			result.html('Итого: 4950 руб.');
 		} else if (gameIndex == 5) {
-			result.text('Итого: 1900 руб.');
+			result.html('Итого: 4950 руб.');
 		} else if (gameIndex == 6) {
-			result.text('Итого: 500 руб.');
+			result.html('Итого: 1950 руб.');
+		} else if (gameIndex == 7) {
+			result.html('Итого: 1950 руб.');
+		} else if (gameIndex == 8) {
+			result.html('Итого: 500 руб.');
 		}
 	});
 

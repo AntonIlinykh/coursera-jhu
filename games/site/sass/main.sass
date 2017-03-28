@@ -30,21 +30,23 @@
 
 //Custom Styles Here
 .game-features
-	opacity: .54
+	opacity: .75
 	display: flex
 	flex-flow: row wrap
 	justify-content: space-around
 	i
-		font-size: 26px
+		color: $accent-color
+		font-size: 36px
 	span
-		font-style: italic
 		margin-top: 19px
 		display: inline-block
-		min-width: 100px
+		min-width: 50%
 		font-size: 14px
 		flex-grow: 1
 .game-features, .game-features span
 	text-align: center
+.game-description
+	margin: 5px 0
 .divider-text
 	font-family: "Roboto", sans-serif
 	font-weight: 100
@@ -273,14 +275,14 @@
 .discount
 	color: $main-color
 	font-size: 40px
-.old-price
-	opacity: .5
 .new-price
 	opacity: .7
 .old-price
 	position: absolute
 	bottom: 83px
+.old-price, .line-through
 	text-decoration: line-through
+	opacity: .5
 .successful, .enlightened, .double
 	background-size: cover
 .successful
