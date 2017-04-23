@@ -162,10 +162,11 @@ $(function() {
 		lazyload: true,
 		items:1,
 		loop: false,
+		rewind: true,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
 		autoWidth: true,
 		autoplay:true,
-		autoplayTimeout:3500,
+		autoplayTimeout:2000,
 		autoplayHoverPause:true
 	});
 
