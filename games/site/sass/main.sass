@@ -1,8 +1,10 @@
 @import "bourbon"
 @import "vars.sass"
 @import "../app/libs/magnific-popup/dist/magnific-popup"
-@import "../app/libs/font-awesome/css/font-awesome.min"
+//@import "../app/libs/font-awesome/css/font-awesome.min"
 @import "../app/libs/owl.carousel/dist/assets/owl.carousel.min"
+@import "../app/libs/photoswipe/dist/photoswipe"
+@import "../app/libs/photoswipe/dist/default-skin/default-skin"
 //Load Libs SASS
 
 // *::-webkit-input-placeholder
@@ -47,6 +49,7 @@
 	text-align: center
 .game-description
 	margin: 5px 0
+	text-align: justify
 .divider-text
 	font-family: "Roboto", sans-serif
 	font-weight: 100
@@ -119,7 +122,7 @@
 .my-mfp-slide-bottom.mfp-removing.mfp-bg
 	opacity: 0
 
-#small-dialog, #feedback-1
+#small-dialog, .feedback-full
 	background: white
 	padding: 20px 30px
 	text-align: left
@@ -131,13 +134,13 @@
 .material
 	position: relative
 	padding: 0
-	margin: 5px
+	margin: 5px 0
 	border: none
 	overflow: visible
 	input, select
 		box-sizing: border-box
 		width: 100%
-		padding: 12px 10px 8px
+		padding: 12px 6px 8px
 		border: none
 		border-radius: 0
 		box-shadow: none
@@ -146,6 +149,8 @@
 		outline: none
 		cursor: text
 		background-color: transparent
+	select
+		padding: 12px 2px 8px
 	hr
 		content: ''
 		display: block
@@ -170,9 +175,9 @@
 	label
 		position: absolute
 		top: 10px
-		left: 10px
+		left: 6px
 		width: 240px
-		font-size: 120%
+		font-size: 100%
 		color: #607D8B
 		transform-origin: 0 -150%
 		transition: transform 300ms ease
@@ -270,6 +275,7 @@
 		width: 140px
 .discount-and-price
 	text-align: center
+	position: relative
 .discount
 	color: $main-color
 	font-size: 40px
@@ -277,7 +283,7 @@
 	opacity: .7
 .old-price
 	position: absolute
-	bottom: 83px
+	bottom: 28px
 .old-price, .line-through
 	text-decoration: line-through
 	opacity: .5
@@ -328,10 +334,14 @@
 		left: 82%
 .feedbacks
 	margin-top: 20px
+.feedback-image
+	width: 100px
+	display: block
+	margin: auto
 .owl-carousel
-	.owl-item
+	.feedback
 		img
-			width: 45%
+			width: 100px
 .owl-prev, .owl-next
 	position: absolute
 	top: 40%
@@ -370,6 +380,71 @@
 .bottom-lead-button
 	margin: auto
 	display: block
+.success-page-header
+	margin-top: 206px
+	text-align: center
+	button
+		margin-top: 12px
+#payment-button, .redirect-warning
+	text-align: center
+.redirect-warning
+	max-width: 300px
+	margin: auto
+	margin-bottom: 15px
+.payment-warnings
+	font-size: 14px
+#menu
+	a
+		text-decoration: none
+	background-color: $main-color
+	h6, #menu-list
+	color: #fff
+	text-align: center
+	h6
+		font-size: 20px
+		margin: 30px 0 20px
+#menu-list
+	a
+		text-decoration: none
+		color: inherit
+	list-style: none
+	opacity: .87
+	padding-left: 30px
+	li
+		width: 196px
+		// text-align: center
+		padding: 10px 0 10px
+		border-bottom: 1px solid #fff
+		&:last-child
+			border-bottom: none
+.countdowner
+	text-align: center
+	font-family: Roboto, sans-serif
+	// font-weight: 900
+	// font-size: 23px
+	border: 1px solid $accent-color
+	padding: 10px
+	border-radius: 4px
+#countdown
+	white-space: nowrap
+	color: $accent-color
+.schedule
+	width: 300px
+.schedule-and-contacts
+	display: flex
+	flex-flow: row wrap
+	justify-content: space-between
+#feedbacks-anch
+	margin-top: 20px
+a
+	text-decoration: none
+	color: inherit
+.feedback-full
+	background-color: #f7f7f7
+	padding-bottom: 50px
+	.feedback-name, .feedback-profession
+		left: 30px
+
 
 
 //ALWAYS END

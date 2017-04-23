@@ -11,9 +11,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
+	<meta property="og:image" content="https://www.sergeyivanov.info/img/empire.jpg" />
+	<meta property="og:description" content="Это Ваш путь к решению жизненных трудностей, требующих непростых ответов на сложные вопросы" />
+	<meta property="og:title" content="Сергей Иванов - Трансформационные игры" />
+	<meta property="og:url" content="https://www.sergeyivanov.info/" />
 
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon2.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
@@ -22,21 +25,23 @@
 	<style></style>
 
 	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
-	<script>
+	<!-- <script>
 	!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)};function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n};function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);
-	</script>
+	</script> -->
 
 	<!-- Load CSS Start -->
-	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<!-- <script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
 	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
-	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.5", false, "all" );</script> -->
 	<!-- Load CSS End -->
 
 	<!-- Load CSS Compiled without JS -->
-	<noscript>
-		<link rel="stylesheet" href="css/fonts.min.css">
-		<link rel="stylesheet" href="css/main.min.css">
-	</noscript>
+	<script src="https://use.fontawesome.com/0baa18faa5.js"></script>
+	<link rel="stylesheet" href="css/fonts.min.css">
+	<link rel="stylesheet" href="css/header.min.css?ver=1.0.8">
+	<link rel="stylesheet" href="css/main.min.css?ver=1.0.8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
 
 </head>
 
@@ -45,23 +50,58 @@
 	<header class="navbar-header">
 		<button class="sidebar-toggle toggle-button js-menu-show header__menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
 		<div class="inner-wrapper">
-			<img src="img/logo.png" alt="Сергей Иванов" class="logo">
+			<img src="img/logo2.png" alt="Сергей Иванов" class="logo">
 		</div>
 	</header>
 	<main id="panel" class="panel">
-		<header class="hero-header">
+		<header id="top-anch" class="hero-header">
 			<div class="hero-image">
 				<div class="hero-text">
-					<!-- <h2 class="slogan">Спа-терапия<br> для&nbsp;Души</h2> -->
-					<img class="slogan" src="img/slogan.png" alt="Время выигрывать">
+					<img class="slogan" src="img/slogan5.png" alt="Время выигрывать">
 					<p class="dates">Томск | 24 - 28 Мая</p>
 					<button class="animate-button reserve-button lead-button popup-with-move-anim" href="#small-dialog" >Забронировать <span class="mine">свое</span> место<i class="appealing-blink"></i></button>
 				</div>
 			</div>
 			<div class="introduction container">
 				<h1>Трансформационные игры</h1>
-				<p>Это <b>ваш путь к решению</b> жизненных трудностей, требующих непростых ответов на сложные вопросы;
-					способ прикоснутьсья к желаемому в <b>комфортном формате настольной игры</b> и приятной атмосфере;
+			</div>
+			<div class="event-pic-carousel-container">
+				<div class="owl-carousel thumbnails-container" id="event-pic-carousel">
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/1-full.jpg" data-size="960x960" data-index="0"><img src="img/event-pic-thumbnails/1.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/2-full.jpg" data-size="960x540" data-index="1"><img src="img/event-pic-thumbnails/2.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/3-full.jpg" data-size="960x638" data-index="2"><img src="img/event-pic-thumbnails/3.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/4-full.jpg" data-size="960x717" data-index="3"><img src="img/event-pic-thumbnails/4.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/5-full.jpg" data-size="960x640" data-index="4"><img src="img/event-pic-thumbnails/5.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/6-full.jpg" data-size="960x640" data-index="5"><img src="img/event-pic-thumbnails/6.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/7-full.jpg" data-size="720x960" data-index="6"><img src="img/event-pic-thumbnails/7.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/8-full.jpg" data-size="960x540" data-index="7"><img src="img/event-pic-thumbnails/8.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/9-full.jpg" data-size="960x640" data-index="8"><img src="img/event-pic-thumbnails/9.jpg" alt=""></a>
+					</figure>
+					<figure class="item event-pic-container">
+						<a href="img/event-pic/10-full.jpg" data-size="960x960" data-index="9"><img src="img/event-pic-thumbnails/10.jpg" alt=""></a>
+					</figure>
+				</div>
+			</div>
+			<div class="introduction container">
+				<p>Это <b>Ваш путь к решению</b> жизненных трудностей, требующих непростых ответов на сложные вопросы;
+					способ прикоснуться к желаемому в <b>комфортном формате настольной игры</b> и приятной атмосфере;
 					а также прекрасная возможность узнать о себе что-то новое и непременно ценное! Отдохнуть душой и телом,
 					при этом получив уникальный опыт - вот, что такое Трансформационные игры.
 				</p>
@@ -69,29 +109,29 @@
 		</header>
 
 		<section>
-			<div class="divider first-divider">
+			<div id="games-anch" class="divider first-divider">
 				<div class="container divider-text">Выберите <br> свою <br> игру</div>
 			</div>
 			<section class="container">
 				<article>
 					<h2 class="game-title">Империя Магов</h2>
 					<div class="game-image-frame">
-						<p class="counter">Осталось 20 мест</p>
+						<p class="counter">Осталось 28 мест</p>
 						<img src="img/empire.jpg" alt="">
 						<div class="game-features">
 							<span><i class="fa fa-users" aria-hidden="true"></i><br>Группа:<br>15 игроков</span>
 							<span><i class="fa fa-clock-o" aria-hidden="true"></i><br>Длительность:<br>4 часа</span>
-							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Цель:<br>Понять себя</span>
+							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Неожиданно<br>о себе</span>
 							<span><i class="fa fa-money" aria-hidden="true"></i><br>Стоимость:<br>1950 руб.</span>
 						</div>
 					</div>
 					<p class="game-description">Захватывающая, увлекательная игра, располагающая к активному общению и взаимодействию.
 						Благодаря продуманной структуре и правилам, она удивительным образом позволяет Вам увидеть себя и свою жизнь
-						как бы в миниатюре; посмотреть на себя будто со стороны, возвысившись над бытовой сумотохой и проблемами.
+						как бы в миниатюре; посмотреть на себя будто со стороны, возвысившись над бытовой суматохой и проблемами.
 					</p>
 					<div class="more-description hidden">
-						<p>Империя Магов будет проводиться <strong>24 мая в 10:00</strong> и <strong>25 мая в 16:00</strong>. Игра длится 4 часа,
-							предумсотрен бесплатный кофе-брейк в середине игры.
+						<p>Империя Магов будет проводиться <strong>25 мая в 10:00</strong> и <strong>26 мая в 16:00</strong>. Игра длится 4 часа,
+							предусмотрен бесплатный кофе-брейк в середине игры.
 						</p>
 						<p>Формат проведения следующий: участвует 10-15 игроков + ведущий - Мастер Игры. Вначале
 							Мастер объясняет правила, цели и возможности игры; составляются индивидуальные запросы на игру - с чем игра должна
@@ -108,12 +148,12 @@
 				<article>
 					<h2 class="game-title">Карта Тамболии</h2>
 					<div class="game-image-frame">
-						<p class="counter">Осталось 5 мест</p>
+						<p class="counter">Осталось 12 мест</p>
 						<img src="img/tambolia.jpg" alt="">
 						<div class="game-features">
-							<span><i class="fa fa-users" aria-hidden="true"></i><br>Группа:<br>15 игроков</span>
+							<span><i class="fa fa-users" aria-hidden="true"></i><br>Группа:<br>7 игроков</span>
 							<span><i class="fa fa-clock-o" aria-hidden="true"></i><br>Длительность:<br>4 часа</span>
-							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Цель:<br>Понять себя</span>
+							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Ответы на<br>важные вопросы</span>
 							<span><i class="fa fa-money" aria-hidden="true"></i><br>Стоимость:<br>1950 руб.</span>
 						</div>
 					</div>
@@ -122,8 +162,8 @@
 						моё предназначение?</q>, <q>Как найти мою любовь?</q>.
 					</p>
 					<div class="more-description hidden">
-						<p>Карта Тамболии будет проводится <strong>24 мая в 16:00</strong> и <strong>25 мая в 10:00</strong>. Игра длится 4 часа,
-							предумсотрен бесплатный кофе-брейк в середине игры.
+						<p>Карта Тамболии будет проводится <strong>25 мая в 16:00</strong> и <strong>26 мая в 10:00</strong>. Игра длится 4 часа,
+							предусмотрен бесплатный кофе-брейк в середине игры.
 						</p>
 						<p>Игра проводится следующим образом: участвует 7 игроков + ведущий - Мастер Игры. Вначале
 							Мастер объясняет правила, цели и возможности игры; составляются индивидуальные запросы - в чем игра должна
@@ -136,27 +176,26 @@
 					<div class="game-image-frame"><button class="more-button">Подробности</button></div>
 				</article>
 				<article>
-					<h2 class="game-title">Малая Империя Магов</h2>
+					<h2 class="game-title">Демонстрационная Империя Магов</h2>
 					<div class="game-image-frame">
-						<p class="counter">Осталось 5 мест</p>
+						<p class="counter">Осталось 25 мест</p>
 						<img src="img/empire2.jpg" alt="">
 						<div class="game-features">
 							<span><i class="fa fa-users" aria-hidden="true"></i><br>Группа:<br>30 игроков</span>
-							<span><i class="fa fa-clock-o" aria-hidden="true"></i><br>Длительность:<br>4 часа</span>
-							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Цель:<br>Понять себя</span>
+							<span><i class="fa fa-clock-o" aria-hidden="true"></i><br>Длительность:<br>3 часа</span>
+							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Неожиданно<br>о себе</span>
 							<span><i class="fa fa-money" aria-hidden="true"></i><br>Стоимость:<br>500 руб.</span>
 						</div>
 					</div>
-					<p class="game-description">Малая Империя Магов - это особая версия игры, созданная специально для тех, кто является новичком в мире Трансформационных
+					<p class="game-description">Демонстрационная Империя Магов - это особая версия игры, созданная специально для тех, кто является новичком в мире Трансформационных
 						игр, и очень хочет с ним познакомиться, однако, не уверен, подходят ли они ему. И доступный формат Малой Империи Магов является отличным предложением
-						в такой ситуации. А самое главное в том, что Малая Империя Магов - это наилучший выбор в качестве Вашей первой игры.
+						в такой ситуации. А самое главное в том, что Демонстрационная Империя Магов - это наилучший выбор в качестве Вашей первой игры.
 					</p>
 					<div class="more-description hidden">
-						<p>Малая Империя Магов состоится <strong>23 мая в 16:00</strong>. Игра длится 4 часа,
-							предумсотрен бесплатный кофе-брейк в середине игры.
+						<p>Демонстрационная Империя Магов состоится <strong>24 мая в 17:00</strong>. Игра длится 3 часа, для участников - бесплатный кофе и чай.
 						</p>
-						<p>Малая Империя Магов отличается от классической тем, что игроки учавстуют в парах, за счёт чего удаётся увеличить количество участников и сделать
-							знакомство с Трансфорационными играми наиболее простым, ведь Ваш партнер - это Ваш советчик и напарник. В остальном, Малая Империя Магов сохраняет
+						<p>Игра отличается от классической тем, что игроки участвуют в парах, за счёт чего удаётся увеличить количество участников и сделать
+							знакомство с Трансформационными играми наиболее простым, ведь Ваш партнер - это Ваш советчик и напарник. В остальном, Малая Империя Магов сохраняет
 							в себе все преимущества классической Империи Магов: она увлекательна и заряжает энергией, одновременно обладает огромным аналитическим потенциалом,
 							позволяющим увидеть гораздо больше, чем мы обычно способны.
 						</p>
@@ -171,12 +210,12 @@
 				<article>
 					<h2 class="game-title">Телесная Архетопия</h2>
 					<div class="game-image-frame">
-						<p class="counter">Осталось 8 мест</p>
+						<p class="counter">Осталось 12 мест</p>
 						<img src="img/archetopia.jpg" alt="">
 						<div class="game-features">
 							<span><i class="fa fa-users" aria-hidden="true"></i><br>Группа:<br>15 игроков</span>
 							<span><i class="fa fa-clock-o" aria-hidden="true"></i><br>Длительность:<br>8 часов</span>
-							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Цель:<br>Контакт с телом</span>
+							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Исполнение<br>желаний</span>
 							<span><i class="fa fa-money" aria-hidden="true"></i><br>Стоимость:<br>4950 руб.</span>
 						</div>
 					</div>
@@ -185,13 +224,13 @@
 						какие архетипы доминируют в Вашей жизни, и как использовать силу всех 12 для достижения ощущения полноты жизни и адаптивности в любой ситуации!
 					</p>
 					<div class="more-description hidden">
-						<p>Телесная Архетопия состоится <strong>26 мая в 10:00</strong>. Игра длится 8 часов,
-							предумсотрен бесплатный кофе-брейки на протяжение игры и перерыв на обед с 14:00 до 16:00.
+						<p>Телесная Архетопия состоится <strong>27 мая в 10:00</strong>. Игра длится 8 часов,
+							предусмотрен бесплатный кофе-брейки на протяжении игры и перерыв на обед с 14:00 до 16:00. Рекомендуем Вам свободную, несковывыющую движения одежду.
 						</p>
-						<p>Мастер игры, 15 участников, поле 4х4 метра и 8 часов наполненных невообразимыми открытиями и откровениями о Вашем теле, жизненном пути и принципах
+						<p>Мастер игры, 15 участников, поле 4х4 метра и 8 часов наполненных невообразимыми открытиями и откровениями о Вашем теле, жизненном пути и принципах,
 							по которым мы все живём - вот что такое Телесная Архетопия. Вас ждёт событие, которое продлится целый день и подарит впечатлений на всю жизнь. Первая
-							половина посвящена работе над Вашим телом, пробуждению его утраченной энергии и восстанавлению чуткого контакта. Вторая половина полностью отведена
-							теме архетипов и их месту в Вашей жизни, и в жизни каждого из людей. Полученный опыт позволяет совершенно по-новому взглянуть на то, почему какждый поступает
+							половина посвящена работе над Вашим телом, пробуждению его утраченной энергии и восстановлению чуткого контакта. Вторая половина полностью отведена
+							теме архетипов и их месту в Вашей жизни, и в жизни каждого из людей. Полученный опыт позволяет совершенно по-новому взглянуть на то, почему каждый поступает
 							именно так, а не иначе; что (или кто) прокладывает те дороги, по которым следует Ваша жизнь.
 						</p>
 					</div>
@@ -202,27 +241,37 @@
 				<article>
 					<h2 class="game-title">Денежный поток</h2>
 					<div class="game-image-frame">
-						<p class="counter">Осталось 8 мест</p>
+						<p class="counter">Осталось 14 мест</p>
 						<img src="img/cashflow.jpg" alt="">
 						<div class="game-features">
 							<span><i class="fa fa-users" aria-hidden="true"></i><br>Группа:<br>15 игроков</span>
 							<span><i class="fa fa-clock-o" aria-hidden="true"></i><br>Длительность:<br>8 часов</span>
-							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Цель:<br>Благополучие</span>
+							<span><i class="fa fa-trophy" aria-hidden="true"></i><br>Достижение<br>благополучия</span>
 							<span><i class="fa fa-money" aria-hidden="true"></i><br>Стоимость:<br>4950 руб.</span>
 						</div>
 					</div>
-					<p class="game-description">денежный поток. психологический формат
-Игра построена на основе игры Р. Кийосаки. Психологический формат разработан Натальей Хлопониной.
-Одна из ключевых позиций ПСИХОЛОГИЧЕСКОГО формата игры ДЕНЕЖНЫЙ ПОТОК – обращение к личным смыслам игроков в процессе игры, при проживании определенных игровых событий, в обсуждении игры по её завершению. Одно из ключевых понятий игры ДЕНЕЖНЫЙ ПОТОК – экономическое понятие «деньги», которое может быть для каждого из нас наполнено разными личными смыслами.
-ДЕНЬГИ – это энергия АКТИВНОГО социального ВЗАИМОДЕЙСТВИЯ. А это значит, что именно через социальное взаимодействие можно и нужно выводить, усиливать, перенаправлять финансовые потоки. Хочешь иметь много денег, быть финансово успешным – иди в социальное взаимодействие, прокачивай разные стратегии, совершенствуй социально-психологическую компетентность (коммуникация, сотрудничество, конкуренция, партнерство), наращивай социальный репертуар ролей и стратегий.
-Психологический формат игры ДЕНЕЖНЫЙ ПОТОК очень близок к ИМПЕРИИ МАГОВ, но в этой игре  больше свободы социального взаимодействия. Ну, и это, про ДЕНЬГИ!</p>
-					<p class="more-description hidden">Дополнительное описание игры Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Языкового страну толку, рукописи раз проектах гор. Меня, жизни, взгляд! Ее страна, семантика, силуэт пустился над семь единственное проектах имеет моей строчка залетают ты буквоград. Безопасную коварный парадигматическая семь щеке последний свое, своих но, моей власти текстами которой ведущими, ручеек.</p>
+					<p class="game-description">Перед вами авторский формат проведения Денежного потока, игры посвященной целиком теме денег; теме щекотливой,
+						иногда даже запретной, но такой важной. Оптимальное сочетание теоретической вводной и практической игровой частей позволяет Вам
+						узнать много нового и тот час применить эти знания на практике.
+					</p>
+					<div class="more-description hidden">
+						<p>Денежный поток состоится <strong>28 мая в 10:00</strong>. Игра длится 8 часов,
+							предусмотрен бесплатный кофе-брейки на протяжении игры и перерыв на обед с 14:00 до 16:00.
+						</p>
+						<p>Первой частью дня будет являться вводный тренинг, в котором освещены основные законы природы денег: чем они являются, как они
+							себя ведут, правда ли они так важны? Его цель - сэкономить годы вашей жизни, которые Вы могли потратить на самостоятельное
+							исследование данной темы, обреченное на утомительное разыскивание информации и фильтрацию достоверного от сомнительного.
+							В нашем же случае Вы получаете все самое важное в компактном формате, доступном для понимания. Во второй части проходит сама игра,
+							которая является как бы финансовым тренажером, на котором Вы тут же можете применить полученные знания, отработать новые
+							навыки абсолютно ничем не рискуя, и получая бесценный опыт.
+						</p>
+					</div>
 					<div class="game-image-frame">
 						<button class="more-button">Подробности</button>
 					</div>
 				</article>
 			</section>
-			<div class="divider third-divider">
+			<div id="bundles-anch" class="divider third-divider">
 				<div class="container divider-text">Получите <br> максимум <br> выгоды</div>
 			</div>
 			<section class="container container-wide">
@@ -231,28 +280,26 @@
 					<div class="card successful">
 						<h4 class="bundle-name">Успешный</h4>
 						<p class="bundle-sign">Комплект</p>
-						<p class="counter counter--bundles">Осталось 7 мест</p>
+						<p class="counter counter--bundles">Осталось 14 мест</p>
 						<ul class="bundle-items">
-							<li>Малая Империя Магов</li>
-							<li>Карта Тамболии или Империя Магов на выбор</li>
 							<li>Денежный поток</li>
+							<li>Карта Тамболии или Империя Магов на выбор</li>
 						</ul>
 						<div class="discount-and-price">
-							<span class="discount">-20%</span><span class="prices"><span class="old-price">6000 руб.</span><span class="new-price">4900 руб.</span></span>
+							<span class="discount">-30%</span><span class="prices"><span class="old-price">6900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">4850 <i class="fa fa-rub" aria-hidden="true"></i></span></span>
 						</div>
 						<button class="animate-button reserve-button popup-with-move-anim" href="#small-dialog">Купить со скидкой<i class="appealing-blink"></i></button>
 					</div>
 					<div class="card enlightened">
 						<h4 class="bundle-name">Просветленный</h4>
 						<p class="bundle-sign">Комплект</p>
-						<p class="counter counter--bundles">Осталось 4 места</p>
+						<p class="counter counter--bundles">Осталось 12 мест</p>
 						<ul class="bundle-items">
-							<li>Малая Империя Магов</li>
-							<li>Карта Тамболии или Империя Магов на выбор</li>
 							<li>Телесная Архетопия</li>
+							<li>Карта Тамболии или Империя Магов на выбор</li>
 						</ul>
 						<div class="discount-and-price">
-							<span class="discount">-20%</span><span class="prices"><span class="old-price">6000 руб.</span><span class="new-price">4900 руб.</span></span>
+							<span class="discount">-30%</span><span class="prices"><span class="old-price">6900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">4850 <i class="fa fa-rub" aria-hidden="true"></i></span></span>
 						</div>
 						<button class="animate-button reserve-button popup-with-move-anim" href="#small-dialog">Купить со скидкой<i class="appealing-blink"></i></button>
 					</div>
@@ -265,125 +312,209 @@
 							<li>Империя Магов</li>
 						</ul>
 						<div class="discount-and-price">
-							<span class="discount">-20%</span><span class="prices"><span class="old-price">3800 руб.</span><span class="new-price">2900 руб.</span></span>
+							<span class="discount">-25%</span><span class="prices"><span class="old-price">3900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">2950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>
 						</div>
 						<button class="animate-button reserve-button popup-with-move-anim" href="#small-dialog">Купить со скидкой<i class="appealing-blink"></i></button>
 					</div>
 				</div>
+				<p class="countdowner section-header">Специальное предложение заканчивается через <span id="countdown"></span></p>
 			</section>
-			<div class="divider fourth-divider">
+			<div id="sergey-anch" class="divider fourth-divider">
 				<div class="container divider-text">Вас ждёт<br> приятная<br> компания</div>
 			</div>
 			<section class="container">
 				<article>
 					<h3 class="section-header">Сергей Иванов</h3>
 					<div class="game-image-frame"><img src="img/funny-serj.jpg" alt=""></div>
-					<p class="game-description">Педагог по образованию и учитель по призванию; ведущий трансформационных игр и треннингов, профессиональный коуч, сертифицированный по стандартам ICF с 10-летним опытом.
+					<p class="game-description">Педагог по образованию и учитель по призванию; ведущий трансформационных игр и тренингов, профессиональный коуч, сертифицированный по стандартам ICF с 10-летним опытом.
 						Непревзойденное мастерство, удивительная чуткость и душевная теплота - его главные черты. Под его руководством трансформационные игры превращаются
-						в удивительное преключение полное эмоций, переживаний и удивительных открытий!</p>
+						в удивительное приключение полное эмоций, переживаний и удивительных открытий!</p>
 				</article>
 				<article>
-					<h3 class="section-header">Отзывы</h3>
-					<div class="feedbacks  owl-carousel">
+					<h3 id="feedbacks-anch" class="section-header">Отзывы</h3>
+					<div class="feedbacks  owl-carousel" id="feedbacks-carousel">
 						<div class="feedback item">
-							<img src="img/grandma.jpg" alt="">
-							<p class="feedback-content"><q>Просто охэрэнно! Лучшее приключение, что я переживала в своей головокружительной жизни!</q></p>
-							<p class="feedback-content"><a href="#feedback-1" class="popup-with-move-anim">Читать весь отзыв</a></p>
-							<p class="feedback-name">Ирина Андреевна</p>
-							<p class="feedback-profession">Кинорежиссёр</p>
+							<img src="img/irina.jpg" alt="">
+							<p class="feedback-content"><q>До вчерашнего вечера я только слышала об этом. А теперь - поклонница таких игр.</q><br>
+								<b><a class="simple-ajax-popup-align-top" href="feedbacks/irina.html">Читать весь отзыв</a></b>
+							</p>
+							<p class="feedback-name">Ирина</p>
+							<p class="feedback-profession">Коуч</p>
 						</div>
 						<div class="feedback item">
-							<img src="img/grandma.jpg" alt="">
-							<p class="feedback-content"><q>Просто охэрэнно! Лучшее приключение, что я переживала в своей головокружительной жизни!</q></p>
-							<p class="feedback-content"><a href="#feedback-1" class="popup-with-move-anim">Читать весь отзыв</a></p>
-							<p class="feedback-name">Ирина Андреевна</p>
-							<p class="feedback-profession">Кинорежиссёр</p>
+							<img class="feedback-image" src="img/eugenia.jpg" alt="">
+							<p class="feedback-content"><q>Это интересное и захватывающие путешествие для людей, желающих достичь цели любого формата...</q><br>
+								<b><a class="simple-ajax-popup-align-top" href="feedbacks/eugenia.html">Читать весь отзыв</a></b>
+							</p>
+							<p class="feedback-name">Евгения</p>
+							<p class="feedback-profession">Психотерапевт</p>
+						</div>
+						<div class="feedback item">
+							<img src="img/oksana.jpg" alt="">
+							<p class="feedback-content"><q>Игра – это такой микс из психологической консультации, собственной рефлексии, тренинга, коучинга и беседы с подружками</q> <br>
+								<b><a class="simple-ajax-popup-align-top" href="feedbacks/oksana.html">Читать весь отзыв</a></b>
+							</p>
+							<p class="feedback-name">Оксана</p>
+							<p class="feedback-profession">Психолог</p>
+						</div>
+						<div class="feedback item">
+							<img src="img/olga.jpg" alt="">
+							<p class="feedback-content"><q>Была совершенно очарована метафорически картами,которые помогли в работе с поставленным запросом</q> <br>
+								<b><a class="simple-ajax-popup-align-top" href="feedbacks/olga.html">Читать весь отзыв</a></b>
+							</p>
+							<p class="feedback-name">Ольга</p>
+							<p class="feedback-profession">Студентка</p>
+						</div>
+						<div class="feedback item">
+							<img src="img/eugeniy.jpg" alt="">
+							<p class="feedback-content"><q>Игра в мягкой форме покажет вам, на какие аспекты вашей жизни следует обратить внимание для продвижения к желаемой цели</q><br>
+								<b><a class="simple-ajax-popup-align-top" href="feedbacks/eugeniy.html">Читать весь отзыв</a></b>
+							</p>
+							<p class="feedback-name">Евгений</p>
+							<p class="feedback-profession">Бизнес-тренер</p>
 						</div>
 					</div>
 				</article>
 				<article>
-					<h3 class="section-header">Информация о событии</h3>
+					<h3 id="place-anch" class="section-header">Информация о событии</h3>
 					<iframe class="map"width="100%" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsZJdUaKTJkMRr6HNENbaGXY&key=AIzaSyAi5jHZUwAXQAjaboH2LIWi-Fxz3HYd-x4" allowfullscreen></iframe>
-					<h4 class="schedule-title">Расписание</h4>
-					<ul class="schedule">
-						<li class="schedule-item">
-							<h5 class="schedule-item-title">Среда, 24 мая</h5>
-							<ul class="schedule-subitem">
-								<li>16:00-20:00 - Малая Империя Магов</li>
+					<aside class="schedule-and-contacts">
+						<div>
+							<h4 id="schedule-anch" class="schedule-title">Расписание</h4>
+							<ul class="schedule">
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">Среда, 24 мая</h5>
+									<ul class="schedule-subitem">
+										<li>17:00-20:00 - Демо Империя Магов</li>
+									</ul>
+								</li>
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">Четверг, 25 мая</h5>
+									<ul class="schedule-subitem">
+										<li>10:00-14:00 - Империя Магов</li>
+										<li>16:00-20:00 - Карта Тамболии</li>
+									</ul>
+								</li>
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">Пятница, 26 мая</h5>
+									<ul class="schedule-subitem">
+										<li>10:00-14:00 - Карта Тамболии</li>
+										<li>16:00-20:00 - Империя Магов</li>
+									</ul>
+								</li>
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">Суббота, 27 мая</h5>
+									<ul class="schedule-subitem">
+										<li>10:00-20:00 - Телесная Архетопия</li>
+									</ul>
+								</li>
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">Воскресенье, 28 мая</h5>
+									<ul class="schedule-subitem">
+										<li>10:00-20:00 - Денежный поток</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li class="schedule-item">
-							<h5 class="schedule-item-title">Четверг, 25 мая</h5>
-							<ul class="schedule-subitem">
-								<li>10:00-14:00 - Империя Магов</li>
-								<li>16:00-20:00 - Карта Тамболии</li>
+						</div>
+						<div>
+							<h4 id="contacts-anch" class="schedule-title">Контакты</h4>
+							<ul class="schedule">
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">Телефон</h5>
+									<ul class="schedule-subitem">
+										<li>+7-952-152-01-84</li>
+									</ul>
+								</li>
+								<li class="schedule-item">
+									<h5 class="schedule-item-title">E-mail</h5>
+									<ul class="schedule-subitem">
+										<li>tickets@sergeyivanov.info</li>
+									</ul>
+								</li>
 							</ul>
-						</li>
-						<li class="schedule-item">
-							<h5 class="schedule-item-title">Пятница, 26 мая</h5>
-							<ul class="schedule-subitem">
-								<li>10:00-14:00 - Карта Тамболии</li>
-								<li>16:00-20:00 - Империя Магов</li>
-							</ul>
-						</li>
-						<li class="schedule-item">
-							<h5 class="schedule-item-title">Суббота, 27 мая</h5>
-							<ul class="schedule-subitem">
-								<li>10:00-20:00 - Телесная Архетопия</li>
-							</ul>
-						</li>
-						<li class="schedule-item">
-							<h5 class="schedule-item-title">Воскресенье, 28 мая</h5>
-							<ul class="schedule-subitem">
-								<li>10:00-20:00 - Денежный поток</li>
-							</ul>
-						</li>
-					</ul>
-					<p class="game-description">Резервация мест закрывается 17 мая; через <span id="countdown"></span></p>
+						</div>
+					</aside>
 					<button class="animate-button reserve-button lead-button bottom-lead-button popup-with-move-anim" href="#small-dialog" >Забронировать свое место<i class="appealing-blink"></i></button>
 				</article>
 			</section>
 		</section>
-		<form id="small-dialog" class="zoom-anim-dialog mfp-hide" _lpchecked="1">
-			<h2>Заказать билет</h2>
-			<p>Закажите свой билет, чтобы быть красавчиком. Все хотят быть красавчиками.</p>
-			<fieldset class="material">
-				<select id="select-game">
-					<option value="1">Комплект Просвящённый (скидка -20%)</option>
-					<option value="2">Комплект Успешный (скидка -20%)</option>
-					<option value="3">Комплект Двойной (скидка -20%)</option>
-					<option value="4">Телесная Архетопия</option>
-					<option value="5">Денежный поток</option>
-					<option value="6">Империя Магов</option>
-					<option value="7">Карта Тамболии</option>
-					<option value="8">Малая Империя Магов</option>
-				</select>
-				<hr>
-				<label>Выберите игру или пакет</label>
-			</fieldset>
-			<fieldset class="material">
-				<input type="text" required>
-				<hr>
-				<label>Ваше имя и фамилия</label>
-			</fieldset>
-			<fieldset class="material">
-				<input type="text" required>
-				<hr>
-				<label>Ещё что-нибудь</label>
-			</fieldset>
-			<p id="result">Итого: <span class="line-through">6000</span> 4950 <i class="fa fa-rub" aria-hidden="true"></i></p>
-			<button class="reserve-button form-button">Оплатить</button>
-		</form>
-		<div id="feedback-1" class="zoom-anim-dialog mfp-hide">
+		<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+			<form id="application" _lpchecked="1">
+				<h2>Заказать билет</h2>
+				<input type="hidden" name="project_name" value="Трансформационные игры">
+				<input type="hidden" name="admin_email" value="tickets@sergeyivanov.info">
+				<input type="hidden" name="form_subject" value="Заявка">
+				<fieldset class="material">
+					<select id="select-game" name="game">
+						<!-- <option label=" "></option> -->
+						<option value="1">Комплект Просвящённый (скидка -30%)</option>
+						<option value="2">Комплект Успешный (скидка -30%)</option>
+						<option value="3">Комплект Двойной (скидка -25%)</option>
+						<option value="4">Телесная Архетопия</option>
+						<option value="5">Денежный поток</option>
+						<option value="6">Карта Тамболии 25.05</option>
+						<option value="7">Империя Магов 25.05</option>
+						<option value="8">Карта Тамболии 26.05</option>
+						<option value="9">Империя Магов 26.05</option>
+						<option value="10">Демонстрационная Империя Магов</option>
+					</select>
+					<hr>
+					<label>Выберите игру или пакет</label>
+				</fieldset>
+				<fieldset id="select-second-game-container" class="material">
+					<select id="select-second-game" name="second-game">
+						<option value="1">Телесная Архетопия + Карта Тамболии 25.05</option>
+						<option value="2">Телесная Архетопия + Империя Магов 25.05</option>
+						<option value="3">Телесная Архетопия + Карта Тамболии 26.05</option>
+						<option value="4">Телесная Архетопия + Империя Магов 26.05</option>
+					</select>
+					<hr>
+					<label>Состав пакета</label>
+				</fieldset>
+				<fieldset class="material">
+					<input type="text" name="name" required>
+					<hr>
+					<label>Ваше имя и фамилия</label>
+				</fieldset>
+				<fieldset class="material">
+					<input type="email" name="email" required>
+					<hr>
+					<label>Почта (куда выслать билет)</label>
+				</fieldset>
+				<div id="result" class="discount-and-price">
+					<span class="discount">-30%</span><span class="prices"><span class="old-price">6900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">4850 <i class="fa fa-rub" aria-hidden="true"></i></span></span>
+				</div>
+				<p class="payment-warnings">Пожалуйста, внимательно проверьте введенные данные перед тем, как перейти к оплате.</p>
+				<p class="payment-warnings">Ваш билет будет доставлен Вам на почту в течение 1-2 рабочих дней.</p>
+				<button class="reserve-button form-button">Перейти к оплате</button>
+			</form>
+			<div id="payment-area" class="hidden">
+				<p class="redirect-warning">Вы будете перенаправленны на платежную страницу Яндекс.Кассы</p>
+				<div id="payment-button">
+					<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%9F%D1%80%D0%BE%D1%81%D0%B2%D1%8F%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9&default-sum=4850&successURL=https%3A%2F%2Fsergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>
+				</div>
+			</div>
+		</div>
+		<div id="feedback-1" class="feedback-full zoom-anim-dialog mfp-hide">
 			<p>
-				Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жаренные составитель над предупредила, образ вскоре диких. Решила составитель, если своих запятых большого великий напоивший семь о, безорфографичный проектах обеспечивает имеет своих, знаках эта? Предупредила пор путь, текста, бросил безопасную власти рекламных лучше вскоре пунктуация семантика использовало заголовок, семь силуэт.
+				далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жаренные составитель над предупредила, образ вскоре диких. Решила составитель, если своих запятых большого великий напоивший семь о, безорфографичный проектах обеспечивает имеет своих, знаках эта? Предупредила пор путь, текста, бросил безопасную власти рекламных лучше вскоре пунктуация семантика использовало заголовок, семь силуэт.
 			</p>
 		</div>
 
 	</main>
 	<nav id="menu">
 	  <header>
-	    <h2>Menu</h2>
+	    <h6>Меню</h6>
+			<ul id="menu-list">
+				<li><a href="#top-anch">Главная</a></li>
+				<li><a href="#games-anch">Игры</a></li>
+				<li><a href="#bundles-anch">Комплекты</a></li>
+				<li><a href="#sergey-anch">О Сергее</a></li>
+				<li><a href="#feedbacks-anch">Отзывы</a></li>
+				<li><a href="#place-anch">Место проведения</a></li>
+				<li><a href="#schedule-anch">Расписание</a></li>
+				<li><a href="#contacts-anch">Контакты</a></li>
+			</ul>
 	  </header>
 	</nav>
 
@@ -391,11 +522,111 @@
 <div class="hidden"></div>
 
 	<!-- Load Scripts Start -->
-	<script>var scr = {"scripts":[
+	<!-- <script>var scr = {"scripts":[
 		{"src" : "js/libs.js", "async" : false},
-		{"src" : "js/common.js", "async" : false}
+		{"src" : "js/common.js?ver=1.0.1", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script> -->
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+	<script src="js/libs.js"></script>
+	<script>document.write('<script src="js/common.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script>
+	<script src="https://www.w3counter.com/tracker.js?id=109765"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter44144234 = new Ya.Metrika({
+	                    id:44144234,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
 	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/44144234" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 	<!-- Load Scripts End -->
+
 </body>
 </html>
