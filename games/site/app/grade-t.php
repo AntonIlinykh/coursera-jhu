@@ -5,13 +5,16 @@
 
 	<meta charset="utf-8">
 
-	<title>Сергей Иванов - Трансформационные игры</title>
+	<title>Тест предназначение</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
+	<meta property="og:image" content="https://www.sergeyivanov.info/img/empire.jpg" />
+	<meta property="og:description" content="Последнее слово в тренинговом мастерстве" />
+	<meta property="og:title" content="Тест на уровень финансовой грамотности" />
+	<meta property="og:url" content="https://www.sergeyivanov.info/" />
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -34,8 +37,11 @@
 
 	<!-- Load CSS Compiled without JS -->
 
+	<script src="https://use.fontawesome.com/0baa18faa5.js"></script>
 	<link rel="stylesheet" href="css/fonts.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.min.css?ver=1.0.10">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+
 
 
 </head>
@@ -47,12 +53,83 @@
 			<img src="img/logo.png" alt="Сергей Иванов" class="logo">
 		</div>
 	</header>
-	<section class="success-page-header container">
-	  <h2>Оплата прошла успешно</h2>
-    <p>Ваш билет будет доставлен Вам на почту в течение 1-2 рабочих дней.</p>
-	  <a href="index.html"><button class="reserve-button">Вернуться на главную</button></a>
-	</section>
+	<section class="test-container container">
+	  <h2>Ваши результаты</h2>
+		<?php
 
+            $answer1 = $_POST['question-1-answers'];
+            $answer2 = $_POST['question-2-answers'];
+            $answer3 = $_POST['question-3-answers'];
+            $answer4 = $_POST['question-4-answers'];
+            $answer5 = $_POST['question-5-answers'];
+            $answer6 = $_POST['question-6-answers'];
+            $answer7 = $_POST['question-7-answers'];
+
+            $totalCorrect = 0;
+
+            if ($answer1 == "B") { $totalCorrect++; }
+            if ($answer1 == "C") { $totalCorrect = $totalCorrect + 2; }
+            if ($answer2 == "B") { $totalCorrect++; }
+            if ($answer2 == "C") { $totalCorrect = $totalCorrect + 2; }
+            if ($answer3 == "B") { $totalCorrect++; }
+            if ($answer3 == "C") { $totalCorrect = $totalCorrect + 2; }
+            if ($answer4 == "B") { $totalCorrect++; }
+            if ($answer4 == "C") { $totalCorrect = $totalCorrect + 2; }
+            if ($answer5 == "B") { $totalCorrect++; }
+            if ($answer5 == "C") { $totalCorrect = $totalCorrect + 2; }
+            if ($answer6 == "B") { $totalCorrect++; }
+            if ($answer6 == "C") { $totalCorrect = $totalCorrect + 2; }
+            if ($answer7 == "B") { $totalCorrect++; }
+            if ($answer7 == "C") { $totalCorrect = $totalCorrect + 2; }
+
+						$shareButtons = "<div class=\"engage-text\">
+							Проверьте предназначение своих друзей!</div>
+						<div class=\"engage-text\">
+											<!-- AddToAny BEGIN -->
+												<div class=\"a2a_kit a2a_kit_size_32 a2a_default_style\">
+												<a class=\"a2a_dd\" href=\"https://www.addtoany.com/share\"></a>
+												<a class=\"a2a_button_vk\"></a>
+												<a class=\"a2a_button_facebook\"></a>
+												<a class=\"a2a_button_whatsapp\"></a>
+												<a class=\"a2a_button_twitter\"></a>
+												<a class=\"a2a_button_email\"></a>
+												<a class=\"a2a_button_copy_link\"></a>
+												</div>
+												<script>
+												var a2a_config = a2a_config || {};
+												a2a_config.linkname = \"Тест на уровень финансовой грамотности\";
+												a2a_config.linkurl = \"https://www.sergeyivanov.info/cashflow-test.html\";
+												a2a_config.locale = \"ru\";
+												</script>
+												<script async src=\"https://static.addtoany.com/menu/page.js\"></script>
+												<!-- AddToAny END --></div>";
+						$textResult = "<div id='results'>У Вас $totalCorrect из 14 баллов</div>";
+						$textEngage = "<div id='res-descr'>Как можно развить свой уровень финансовой грамотности?</div>
+						<div class='engage-text'>Скажите \"Да\" личностному росту, ведь лучший вклад в Ваше будущее - это саморазвитие!
+						И отличным инструментом саморазвития являются качественные тренинги.</div>
+						<a href=\"index.html\"><button class=\"reserve-button\">Посмотреть тренинги</button></a>";
+						// $textEngage = "<div class='engage-text'>Вау, финансы - это довольно сложно не правда ли? Мало кто поспорит: деньги сейчас важны как никогда.
+						// Хотите лучше разбираться в финансовом мире, понять что такое деньги, почему многие из нас так сильно к ним стремятся, и зачем они нам так нужны?</div>
+						// <img src=\"https://media.giphy.com/media/LCdPNT81vlv3y/giphy.gif\">
+						// <div class='engage-text'>Тогда у нас есть уникальный тренинг - Денежный поток, подготовленный настоящим профессионалом.
+						// Эффективно и интересно заниматься саморазвитием теперь реально!</div >
+						// <a href=\"index.html\"><button class=\"reserve-button\">Узнать больше</button></a>";
+
+						if ($totalCorrect < 3) {
+							echo "$textResult <div id='res-descr'>Вы немного плаваете в теме финансов...</div> <img src=\"https://media.giphy.com/media/3xz2BCohVTd7h2Kvfi/giphy.gif\"> $shareButtons $textEngage";
+						} else if ($totalCorrect < 6) {
+							echo "$textResult <div id='res-descr'>Вы неплохо разбираетесь в финансах.</div> <img src=\"https://media.giphy.com/media/xTiQyBOIQe5cgiyUPS/giphy.gif\"> $shareButtons $textEngage";
+						} else if ($totalCorrect > 5) {
+							echo "$textResult <div id='res-descr'>Вы просто финансовый гуру!</div> <img src=\"https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif\"> $shareButtons $textEngage";
+						}
+
+
+
+
+
+        ?>
+
+	</section>
 
 
 <div class="hidden"></div>
@@ -63,8 +140,38 @@
 		{"src" : "js/common.js?ver=1.0.1", "async" : false}
 		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
 	</script> -->
-	<!-- <script src="js/libs.js"></script>
-	<script>document.write('<script src="js/common.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
+	<script src="js/libs.js"></script>
+	<script src="js/test.js?ver=1.0.2"></script>
+	<!-- <script>document.write('<script src="js/common.js?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');</script> -->
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter44144234 = new Ya.Metrika({
+	                    id:44144234,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/44144234" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 	<!-- Load Scripts End -->
 
 </body>

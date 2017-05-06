@@ -21,9 +21,10 @@
 		background-image: url(../img/third-divider-small.jpg)
 	.fourth-divider
 		background-image: url(../img/fourth-divider-small.jpg)
-	.owl-prev, .owl-next
-		width: 48px
-		text-align: center
+	#feedbacks-carousel
+		.owl-prev, .owl-next
+			width: 48px
+			text-align: center
 
 /*======= 425 px========*/
 @media only screen and (min-width : 425px)
@@ -70,10 +71,30 @@
 		background-image: url(../img/third-divider-stablet.jpg)
 	.fourth-divider
 		background-image: url(../img/fourth-divider-stablet.jpg)
-	.owl-next
-		right: 16%
-	.owl-prev
-		left: 16%
+	#feedbacks-carousel
+		.owl-next
+			right: 16%
+		.owl-prev
+			left: 16%
+	.icons-container
+		svg
+			width: 80px
+			height: 80px
+		p
+			font-size: 14px
+	.reason-block
+		flex-wrap: nowrap
+		div
+			width: 50%
+	.reason-text
+		h3
+			margin: 0
+	.reason-text.odd
+		padding-left: 10px
+	.reason-text.even
+		padding-right: 10px
+		order: -1
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
@@ -86,7 +107,14 @@
 		font-size: 42px
 	.game-description
 		margin: 16px 0 0
-
+	.icons-container
+		svg
+			width: 90px
+			height: 90px
+		p
+			font-size: 16px
+	.section-header
+		font-size: 26px
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
@@ -110,7 +138,8 @@
 		background-image: url(../img/fourth-divider-slaptop.jpg)
 	.introduction.container
 		padding: 16px 16px
-
+	#goals-container
+		margin: auto
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	.hero-header
@@ -133,11 +162,13 @@
 		max-width: 750px
 	.container-wide
 		max-width: 1000px
-	.game-title, .introduction h1
-		font-size: 30px
+	// .game-title, .introduction h1
+	// 	font-size: 30px
 	.section-header
 		margin-top: 20px
 		font-size: 30px
+	.reason-block
+		margin-top: 80px
 @media only screen and (min-width : 1200px) and (-webkit-max-device-pixel-ratio: 1), screen and (min-width : 1200px) and (max-resolution: 96dpi)
 	.first-divider
 		background-image: url(../img/first-divider-laptop.jpg)

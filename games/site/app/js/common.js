@@ -151,24 +151,43 @@ $(function() {
 	});
 
 	//OwlCarousel
+	$('#goals-carousel').owlCarousel({
+		nav:true,
+		items:1,
+		loop: true,
+		rewind: false,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+		dots: false,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		autoplayTimeout: 3000,
+		responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        768:{
+            items:3
+        }
+    }
+	});
 	$('#feedbacks-carousel').owlCarousel({
 		nav:true,
 		items:1,
 		loop: true,
-		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>']
-	});
-	$('#event-pic-carousel').owlCarousel({
-		margin: 10,
-		lazyload: true,
-		items:1,
-		loop: false,
-		rewind: true,
 		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-		autoWidth: true,
-		autoplay:true,
-		autoplayTimeout:2000,
-		autoplayHoverPause:true
+		dots: false
 	});
+	// $('#event-pic-carousel').owlCarousel({
+	// 	dots: false,
+	// 	margin: 7,
+	// 	lazyLoad: true,
+	// 	loop: true,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 2000,
+	// 	autoplayTimeout: 3000,
+	// 	autoWidth: true
+	// });
 
 	//Countdown
 	// Set the date we're counting down to
