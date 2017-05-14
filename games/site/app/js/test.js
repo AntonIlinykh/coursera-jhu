@@ -36,7 +36,15 @@ $(function() {
 
 
 
-
+	$('#start-quiz').on('click', function () {
+		$('#quiz-intro').slideUp('slow', function() {
+			$('#quiz-container').slideDown('slow');
+		});
+	});
+	// $('#start-quiz').on('click', function () {
+	// 	$('#quiz-intro').slideUp();
+	// 	$('#quiz-container').slideDown();
+	// });
 	//OwlCarousel
 	$('#test-carousel').owlCarousel({
 		nav:true,

@@ -432,6 +432,7 @@
 	border: 1px solid $accent-color
 	padding: 10px
 	border-radius: 4px
+	margin-bottom: 10px
 #countdown
 	white-space: nowrap
 	color: $accent-color
@@ -472,16 +473,15 @@ footer
 	img
 		display: block
 		width: 100%
-		max-width: 500px
+		max-width: 100%
 		margin: auto
 	ol
 		padding: 0
 	h2
 		font-size: 20px
-		border-top: 1px solid #aaa
-		border-bottom: 1px solid #aaa
-	h2, h2, h3
-		opacity: 0.87
+	h2, h2, h3, p
+		color: #4f4e4e
+		text-align: left
 	h3
 		font-size: 16px
 	li, button
@@ -525,7 +525,6 @@ footer
 	opacity: .54
 .engage-text
 	opacity: .87
-	max-width: 500px
 	margin: 20px auto 20px
 svg
 	width: 50px
@@ -533,7 +532,6 @@ svg
 .ordinary-card
 	position: relative
 	margin-top: 10px
-	height: 105px
 	width: 100%
 	background-color: #f7f7f7
 	padding: 10px
@@ -551,7 +549,16 @@ svg
 	h6
 		font-size: 14px
 	p
+		color: #4f4e4e
 		top: 50px
-
+#start-quiz
+	margin-top: 10px
+.test-container
+	.ordinary-card
+		margin-bottom: 20px
+		p
+			top: 30px
+			font-size: 16px
+			line-height: 1.4
 //ALWAYS END
 @import "media"

@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Тест предназначение</title>
+	<title>Чего Вам по-настоящему не хватает в жизни?</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,8 @@
 
 	<meta property="og:image" content="https://www.sergeyivanov.info/img/empire.jpg" />
 	<meta property="og:description" content="Последнее слово в тренинговом мастерстве" />
-	<meta property="og:title" content="Тест на уровень финансовой грамотности" />
-	<meta property="og:url" content="https://www.sergeyivanov.info/" />
+	<meta property="og:title" content="Чего Вам по-настоящему не хватает в жизни?" />
+	<meta property="og:url" content="https://www.sergeyivanov.info/tambolia-test.html" />
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -39,7 +39,7 @@
 
 	<script src="https://use.fontawesome.com/0baa18faa5.js"></script>
 	<link rel="stylesheet" href="css/fonts.min.css">
-	<link rel="stylesheet" href="css/main.min.css?ver=1.0.10">
+	<link rel="stylesheet" href="css/main.min.css?ver=1.1.1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
 
@@ -50,40 +50,40 @@
   <header class="navbar-header">
 		<button class="sidebar-toggle toggle-button js-menu-show header__menu-toggle hidden"><i class="fa fa-bars" aria-hidden="true"></i></button>
 		<div class="inner-wrapper">
-			<img src="img/logo.png" alt="Сергей Иванов" class="logo">
+			<a href="/index.html"><img src="img/logo2.png" alt="Сергей Иванов" class="logo"></a>
 		</div>
 	</header>
 	<section class="test-container container">
 	  <h2>Ваши результаты</h2>
 		<?php
 
-            $answer1 = $_POST['question-1-answers'];
-            $answer2 = $_POST['question-2-answers'];
-            $answer3 = $_POST['question-3-answers'];
-            $answer4 = $_POST['question-4-answers'];
-            $answer5 = $_POST['question-5-answers'];
-            $answer6 = $_POST['question-6-answers'];
-            $answer7 = $_POST['question-7-answers'];
+			$answer1 = $_POST['question-1-answers'];
+			$answer2 = $_POST['question-2-answers'];
+			$answer3 = $_POST['question-3-answers'];
+			$answer4 = $_POST['question-4-answers'];
+			$answer5 = $_POST['question-5-answers'];
+			$answer6 = $_POST['question-6-answers'];
+			$answer7 = $_POST['question-7-answers'];
 
-            $totalCorrect = 0;
+			$totalCorrect = 0;
 
-            if ($answer1 == "B") { $totalCorrect++; }
-            if ($answer1 == "C") { $totalCorrect = $totalCorrect + 2; }
-            if ($answer2 == "B") { $totalCorrect++; }
-            if ($answer2 == "C") { $totalCorrect = $totalCorrect + 2; }
-            if ($answer3 == "B") { $totalCorrect++; }
-            if ($answer3 == "C") { $totalCorrect = $totalCorrect + 2; }
-            if ($answer4 == "B") { $totalCorrect++; }
-            if ($answer4 == "C") { $totalCorrect = $totalCorrect + 2; }
-            if ($answer5 == "B") { $totalCorrect++; }
-            if ($answer5 == "C") { $totalCorrect = $totalCorrect + 2; }
-            if ($answer6 == "B") { $totalCorrect++; }
-            if ($answer6 == "C") { $totalCorrect = $totalCorrect + 2; }
-            if ($answer7 == "B") { $totalCorrect++; }
-            if ($answer7 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer1 == "B") { $totalCorrect++; }
+			if ($answer1 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer2 == "B") { $totalCorrect++; }
+			if ($answer2 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer3 == "B") { $totalCorrect++; }
+			if ($answer3 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer4 == "B") { $totalCorrect++; }
+			if ($answer4 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer5 == "B") { $totalCorrect++; }
+			if ($answer5 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer6 == "B") { $totalCorrect++; }
+			if ($answer6 == "C") { $totalCorrect = $totalCorrect + 2; }
+			if ($answer7 == "B") { $totalCorrect++; }
+			if ($answer7 == "C") { $totalCorrect = $totalCorrect + 2; }
 
 						$shareButtons = "<div class=\"engage-text\">
-							Проверьте предназначение своих друзей!</div>
+							Поделитесь тестом с друзьями!</div>
 						<div class=\"engage-text\">
 											<!-- AddToAny BEGIN -->
 												<div class=\"a2a_kit a2a_kit_size_32 a2a_default_style\">
@@ -97,17 +97,28 @@
 												</div>
 												<script>
 												var a2a_config = a2a_config || {};
-												a2a_config.linkname = \"Тест на уровень финансовой грамотности\";
-												a2a_config.linkurl = \"https://www.sergeyivanov.info/cashflow-test.html\";
+												a2a_config.linkname = \"Чего Вам по-настоящему не хватает в жизни\";
+												a2a_config.linkurl = \"https://www.sergeyivanov.info/tambolia-test.html\";
 												a2a_config.locale = \"ru\";
 												</script>
 												<script async src=\"https://static.addtoany.com/menu/page.js\"></script>
 												<!-- AddToAny END --></div>";
 						$textResult = "<div id='results'>У Вас $totalCorrect из 14 баллов</div>";
-						$textEngage = "<div id='res-descr'>Как можно развить свой уровень финансовой грамотности?</div>
-						<div class='engage-text'>Скажите \"Да\" личностному росту, ведь лучший вклад в Ваше будущее - это саморазвитие!
-						И отличным инструментом саморазвития являются качественные тренинги.</div>
-						<a href=\"index.html\"><button class=\"reserve-button\">Посмотреть тренинги</button></a>";
+						$textEngage = "<h2>Каковы пути роста?</h2>
+						<div class='engage-text'>Вне зависимости от наших сегодняшних результатов мы все стремимся к большему, мы все хотим развиваться.
+						Это заложено в нашей человеческой природе. Тренинги Карта Тамболии и Империя магов - хороший выбор для тех, кто ищет роста в широком спектре сфер жизни.
+						</div>
+						<a href=\"/index.html#tambolia-anch\"><div class=\"ordinary-card\">
+							<img src=\"img/tambolia.jpg\" alt=\"\">
+							<h6>Тамболия</h6>
+							<p>Ответы на важные вопросы</p>
+						</div><a>
+						<a href=\"/index.html#games-anch\"><div class=\"ordinary-card\">
+							<img src=\"img/empire.jpg\" alt=\"\">
+							<h6>Империя магов</h6>
+							<p>Вдохновение и определенность</p>
+						</div><a>
+						<a href=\"\index.html\"><button class=\"reserve-button\">Посмотреть все тренинги</button></a>";
 						// $textEngage = "<div class='engage-text'>Вау, финансы - это довольно сложно не правда ли? Мало кто поспорит: деньги сейчас важны как никогда.
 						// Хотите лучше разбираться в финансовом мире, понять что такое деньги, почему многие из нас так сильно к ним стремятся, и зачем они нам так нужны?</div>
 						// <img src=\"https://media.giphy.com/media/LCdPNT81vlv3y/giphy.gif\">
@@ -115,12 +126,26 @@
 						// Эффективно и интересно заниматься саморазвитием теперь реально!</div >
 						// <a href=\"index.html\"><button class=\"reserve-button\">Узнать больше</button></a>";
 
-						if ($totalCorrect < 3) {
-							echo "$textResult <div id='res-descr'>Вы немного плаваете в теме финансов...</div> <img src=\"https://media.giphy.com/media/3xz2BCohVTd7h2Kvfi/giphy.gif\"> $shareButtons $textEngage";
-						} else if ($totalCorrect < 6) {
-							echo "$textResult <div id='res-descr'>Вы неплохо разбираетесь в финансах.</div> <img src=\"https://media.giphy.com/media/xTiQyBOIQe5cgiyUPS/giphy.gif\"> $shareButtons $textEngage";
-						} else if ($totalCorrect > 5) {
-							echo "$textResult <div id='res-descr'>Вы просто финансовый гуру!</div> <img src=\"https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif\"> $shareButtons $textEngage";
+						if ($totalCorrect <= 6) {
+							echo "$textResult <h2>Вам остро не хватает сил и энергии, заботы близких и их поддержки</h2>
+							<p>Вам не достаёт веры в себя; близкого человека, который бы оказал поддержку и внимание; уверенности в том, что задуманные планы будут реализованы.
+							Возможно, в данное время Вы нередко сталкиваетесь с ситуациями, в которых чувствуете себя	не властными над обстоятельствами, вынуждены совершать
+							действия из чувства долга и обязательств, а не из желания. При этом Вам не хватает чувства внутренней свободы. </p>
+							<p>У Вас накопилась усталость и стоит устроить себе отдых.
+							</p> <img src=\"https://media.giphy.com/media/BmQ4DDAwmYvHq/giphy.gif\"> $shareButtons $textEngage";
+						} else if ($totalCorrect <= 11) {
+							echo "$textResult <h2>Вы достаточно энергичны и целеустремлены, но вам немного не хватает поддержки и тепла близких</h2>
+							<p>Временами Вы полны энергии, временами её у Вас почти нет. Вам не всегда удаётся придерживаться намеченных планов, хотя иногда вы испытываете
+							душевный подъём и добиваетесь позитивных результатов. По-видимому, Вам недостаёт поддержки близкого человека и его заботы, а также уверенности
+							в себе и своих силах.</p>
+							<img src=\"https://media.giphy.com/media/kvrvnB158J4fm/giphy.gif\"> $shareButtons $textEngage";
+						} else if ($totalCorrect > 11) {
+							echo "$textResult <h2>Внутри Вас пылает праведный огонь, вы полны энергии и её уровню можно позавидовать!</h2>
+							<p>Вы полны энергии и регулярно добиваетесь поставленных целей, Вы знаете, чего хотите от жизни и намерены это получать. Вы распространяете повсюду
+							свою энергию и являетесь примером для подражания. У Вас есть своё собственное мнение, за которое Вы готовы постоять. Ваш успех находится за углом, если уже
+							не настиг Вас. Но не стоит забывать о необходимости заботы о себе и важности регулярного отдыха.</p>
+							<img src=\"https://media.giphy.com/media/3oKIP9FFxazqOMNVkc/giphy.gif\">
+							$shareButtons $textEngage";
 						}
 
 

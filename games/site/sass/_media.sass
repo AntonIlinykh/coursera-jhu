@@ -21,11 +21,9 @@
 		background-image: url(../img/third-divider-small.jpg)
 	.fourth-divider
 		background-image: url(../img/fourth-divider-small.jpg)
-	#feedbacks-carousel
-		.owl-prev, .owl-next
-			width: 48px
-			text-align: center
-
+	.test-container
+		li
+			width: 335px
 /*======= 425 px========*/
 @media only screen and (min-width : 425px)
 	.hero-header
@@ -39,6 +37,9 @@
 		background-image: url(../img/third-divider-medium.jpg)
 	.fourth-divider
 		background-image: url(../img/fourth-divider-medium.jpg)
+	.test-container
+		li
+			width: 375px
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
@@ -50,6 +51,9 @@
 		font-size: 22px
 	.lead-button
 		font-size: 15px
+	.test-container
+		li
+			width: 450px
 
 @media only screen and (min-width : 525px)
 	.hero-header
@@ -98,6 +102,9 @@
 @media only screen and (min-width : 635px)
 	.ordinary-card
 		max-width: 300px
+	.test-container
+		.ordinary-card
+			max-width: 100%
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	.hero-header
@@ -117,6 +124,13 @@
 			font-size: 16px
 	.section-header
 		font-size: 26px
+	.test-container
+		li
+			width: 500px
+		.owl-next
+			right: 10%
+		.owl-prev
+			left: 10%
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
@@ -142,6 +156,14 @@
 		padding: 16px 16px
 	#goals-container
 		margin: auto
+	#feedbacks-carousel
+		.owl-next
+			right: 35%
+		.owl-prev
+			left: 35%
+	.test-container
+		li
+			width: 550px
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	.hero-header
@@ -185,6 +207,11 @@
 	.divider
 		background-attachment: fixed
 		background-position: center bottom
+	.test-container
+		.owl-next
+			right: 12%
+		.owl-prev
+			left: 12%
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1400px)
 	.hero-header

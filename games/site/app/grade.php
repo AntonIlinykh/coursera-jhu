@@ -39,7 +39,7 @@
 
 	<script src="https://use.fontawesome.com/0baa18faa5.js"></script>
 	<link rel="stylesheet" href="css/fonts.min.css">
-	<link rel="stylesheet" href="css/main.min.css?ver=1.0.10">
+	<link rel="stylesheet" href="css/main.min.css?ver=1.1.1">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
 
@@ -50,7 +50,7 @@
   <header class="navbar-header">
 		<button class="sidebar-toggle toggle-button js-menu-show header__menu-toggle hidden"><i class="fa fa-bars" aria-hidden="true"></i></button>
 		<div class="inner-wrapper">
-			<img src="img/logo.png" alt="Сергей Иванов" class="logo">
+			<a href="/index.html"><img src="img/logo2.png" alt="Сергей Иванов" class="logo"></a>
 		</div>
 	</header>
 	<section class="test-container container">
@@ -97,10 +97,17 @@
 												<script async src=\"https://static.addtoany.com/menu/page.js\"></script>
 												<!-- AddToAny END --></div>";
 						$textResult = "<div id='results'>У Вас $totalCorrect из 7 правильных ответов</div>";
-						$textEngage = "<div id='res-descr'>Как можно развить свой уровень финансовой грамотности?</div>
-						<div class='engage-text'>Скажите \"Да\" личностному росту, ведь лучший вклад в Ваше будущее - это саморазвитие!
-						И отличным инструментом саморазвития являются качественные тренинги.</div>
-						<a href=\"index.html\"><button class=\"reserve-button\">Посмотреть тренинги</button></a>";
+						$textEngage = "<h2>Как можно развить свой уровень финансовой грамотности?</h2>
+						<div class='engage-text'>Одним из эффективных способом самообразования являются тренинги - они позволяют за короткое
+						время получить массу нужной информации и улучшить свои навыки. Надежным выбором является тренинг Денежный поток, который
+						специализирован на теме финансов.
+						</div>
+						<a href=\"/index.html#cashflow-anch\"><div class=\"ordinary-card\">
+							<img src=\"img/cashflow.jpg\" alt=\"\">
+							<h6>Денежный поток</h6>
+							<p>Ваша финансовая свобода</p>
+						</div><a>
+						<a href=\"\index.html\"><button class=\"reserve-button\">Посмотреть все тренинги</button></a>";
 						// $textEngage = "<div class='engage-text'>Вау, финансы - это довольно сложно не правда ли? Мало кто поспорит: деньги сейчас важны как никогда.
 						// Хотите лучше разбираться в финансовом мире, понять что такое деньги, почему многие из нас так сильно к ним стремятся, и зачем они нам так нужны?</div>
 						// <img src=\"https://media.giphy.com/media/LCdPNT81vlv3y/giphy.gif\">
@@ -109,11 +116,13 @@
 						// <a href=\"index.html\"><button class=\"reserve-button\">Узнать больше</button></a>";
 
 						if ($totalCorrect < 3) {
-							echo "$textResult <div id='res-descr'>Вы немного плаваете в теме финансов...</div> <img src=\"https://media.giphy.com/media/3xz2BCohVTd7h2Kvfi/giphy.gif\"> $shareButtons $textEngage";
+							echo "$textResult <h2>Вы немного плаваете в теме финансов...</h2> <img src=\"https://media.giphy.com/media/3xz2BCohVTd7h2Kvfi/giphy.gif\">
+							<p>Остается только позавидовать тому, сколько Вам ещё предстоит открыть! А ещё особой похвалы заслуживает Ваше желание развиваться, что не каждому
+							под силу.</p> $shareButtons $textEngage";
 						} else if ($totalCorrect < 6) {
-							echo "$textResult <div id='res-descr'>Вы неплохо разбираетесь в финансах.</div> <img src=\"https://media.giphy.com/media/xTiQyBOIQe5cgiyUPS/giphy.gif\"> $shareButtons $textEngage";
+							echo "$textResult <h2>Вы неплохо разбираетесь в финансах.</h2> <img src=\"https://media.giphy.com/media/xTiQyBOIQe5cgiyUPS/giphy.gif\"> $shareButtons $textEngage";
 						} else if ($totalCorrect > 5) {
-							echo "$textResult <div id='res-descr'>Вы просто финансовый гуру!</div> <img src=\"https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif\"> $shareButtons $textEngage";
+							echo "$textResult <h2>Вы просто финансовый гуру!</h2> <img src=\"https://media.giphy.com/media/RrVzUOXldFe8M/giphy.gif\"> $shareButtons $textEngage";
 						}
 
 
