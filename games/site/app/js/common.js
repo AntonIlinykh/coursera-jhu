@@ -95,52 +95,63 @@ $(function() {
 		var result = $('#result');
 		var gameIndex = selGame.val();
 		var selectSecondGameContainer = $('#select-second-game-container');
+		var willPay = $('#will-pay');
 		if (gameIndex == 1) {
+			willPay.show();
 			selectSecondGame.html('<option value="1">Телесная Архетопия + Карта Тамболии 25.05</option>  <option value="2">Телесная Архетопия + Империя Магов 25.05</option> <option value="1">Телесная Архетопия + Карта Тамболии 26.05</option> <option value="1">Телесная Архетопия + Империя Магов 26.05</option>');
 			$('#select-third-game').remove();
 			selectSecondGameContainer.slideDown();
 			result.html('<span class="discount">-30%</span><span class="prices"><span class="old-price">6900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">4850 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%9F%D1%80%D0%BE%D1%81%D0%B2%D1%8F%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9&default-sum=4850&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%9F%D1%80%D0%BE%D1%81%D0%B2%D1%8F%D1%89%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9&default-sum=4365&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 2) {
+			willPay.show();
 			selectSecondGame.html('<option value="1">Денежный поток + Карта Тамболии 25.05</option>  <option value="2">Денежный поток + Империя Магов 25.05</option> <option value="1">Денежный поток + Карта Тамболии 26.05</option> <option value="1">Денежный поток + Империя Магов 26.05</option>');
 			$('#select-third-game').remove();
 			selectSecondGameContainer.slideDown();
 			result.html('<span class="discount">-30%</span><span class="prices"><span class="old-price">6900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">4850 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%A3%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D1%8B%D0%B9&default-sum=4850&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%A3%D1%81%D0%BF%D0%B5%D1%88%D0%BD%D1%8B%D0%B9&default-sum=4365&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 3) {
-			selectSecondGame.html('<option value="1">Карта Тамболии 25.05</option>  <option value="2">Карта Тамболии 26.05</option>');
-			selectSecondGame.after('<select id="select-third-game" name="third-game"><option value="1">Империя Магов 25.05</option> <option value="2">Империя Магов 26.05</option> </select>');
+			willPay.show();
+			selectSecondGame.html('<option value="1">Карта Тамболии 25.05</option>  <option value="2" disabled>Карта Тамболии 26.05</option>');
+			selectSecondGame.after('<select id="select-third-game" name="third-game"><option value="1">Империя Магов 25.05</option> <option value="2" disabled>Империя Магов 26.05</option> </select>');
 			selectSecondGameContainer.slideDown();
 			result.html('<span class="discount">-25%</span><span class="prices"><span class="old-price">3900 <i class="fa fa-rub" aria-hidden="true"></i></span><span class="new-price">2950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%94%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B9&default-sum=2950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%82+%D0%94%D0%B2%D0%BE%D0%B9%D0%BD%D0%BE%D0%B9&default-sum=2655&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 4) {
+			willPay.show();
 			selectSecondGameContainer.slideUp();
 			result.html('<span class="prices"><span class="new-price">4950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BD%D0%B0%D1%8F+%D0%90%D1%80%D1%85%D0%B5%D1%82%D0%BE%D0%BF%D0%B8%D1%8F&default-sum=4950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%A2%D0%B5%D0%BB%D0%B5%D1%81%D0%BD%D0%B0%D1%8F+%D0%90%D1%80%D1%85%D0%B5%D1%82%D0%BE%D0%BF%D0%B8%D1%8F&default-sum=4455&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 5) {
+			willPay.show();
 			selectSecondGameContainer.slideUp();
 			result.html('<span class="prices"><span class="new-price">4950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%94%D0%B5%D0%BD%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9+%D0%9F%D0%BE%D1%82%D0%BE%D0%BA&default-sum=4950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%94%D0%B5%D0%BD%D0%B5%D0%B6%D0%BD%D1%8B%D0%B9+%D0%9F%D0%BE%D1%82%D0%BE%D0%BA&default-sum=4455&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 6) {
+			willPay.show();
 			selectSecondGameContainer.slideUp();
 			result.html('<span class="prices"><span class="new-price">1950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%B0%D1%80%D1%82%D0%B0+%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%BB%D0%B8%D0%B8&default-sum=1950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%B0%D1%80%D1%82%D0%B0+%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%BB%D0%B8%D0%B8&default-sum=1755&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 7) {
+			willPay.show();
 			selectSecondGameContainer.slideUp();
 			result.html('<span class="prices"><span class="new-price">1950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F+%D0%9C%D0%B0%D0%B3%D0%BE%D0%B2&default-sum=1950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F+%D0%9C%D0%B0%D0%B3%D0%BE%D0%B2&default-sum=1755&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 8) {
+			willPay.show();
 			selectSecondGameContainer.slideUp();
 			result.html('<span class="prices"><span class="new-price">1950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%B0%D1%80%D1%82%D0%B0+%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%BB%D0%B8%D0%B8&default-sum=1950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%9A%D0%B0%D1%80%D1%82%D0%B0+%D0%A2%D0%B0%D0%BC%D0%B1%D0%BE%D0%BB%D0%B8%D0%B8&default-sum=1755&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 9) {
+			willPay.show();
 			selectSecondGameContainer.slideUp();
 			result.html('<span class="prices"><span class="new-price">1950 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F+%D0%9C%D0%B0%D0%B3%D0%BE%D0%B2&default-sum=1950&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F+%D0%9C%D0%B0%D0%B3%D0%BE%D0%B2&default-sum=1755&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		} else if (gameIndex == 10) {
+			willPay.hide();
 			selectSecondGameContainer.slideUp();
-			result.html('<span class="prices"><span class="new-price">500 <i class="fa fa-rub" aria-hidden="true"></i></span></span>');
-			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%94%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F+%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F+%D0%9C%D0%B0%D0%B3%D0%BE%D0%B2&default-sum=500&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
+			result.html('<span class="prices"><span class="new-price">Бесплатно</i></span></span>');
+			paymentButton.html('<iframe frameborder="0" allowtransparency="true" scrolling="no" src="https://money.yandex.ru/quickpay/button-widget?account=410015127024277&quickpay=small&any-card-payment-type=on&button-text=02&button-size=l&button-color=orange&targets=%D0%94%D0%B5%D0%BC%D0%BE%D0%BD%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F+%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B8%D1%8F+%D0%9C%D0%B0%D0%B3%D0%BE%D0%B2&default-sum=450&fio=on&successURL=https%3A%2F%2Fwww.sergeyivanov.info%2Fsuccess.html" width="190" height="48"></iframe>');
 		}
 	});
 
@@ -191,27 +202,22 @@ $(function() {
 
 	//Countdown
 	// Set the date we're counting down to
-	var countDownDate = new Date("May 10, 2017 20:00:00").getTime();
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-		// Get todays date and time
-		var now = new Date().getTime();
-		// Find the distance between now an the count down date
-		var distance = countDownDate - now;
-		// Time calculations for days, hours, minutes and seconds
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		// Display the result in the element with id="demo"
-		document.getElementById("countdown").innerHTML = days + " д. " + hours + " ч. "
-		+ minutes + " м. " + seconds + " с. ";
-		// If the count down is finished, write some text
-		// if (distance < 0) {
-		// 	clearInterval(x);
-		// 	document.getElementById("countdown").innerHTML = "EXPIRED";
-		// 	}
-		}, 1000);
+	// var countDownDate = new Date("May 22, 2017 00:00:00").getTime();
+	// // Update the count down every 1 second
+	// var x = setInterval(function() {
+	// 	// Get todays date and time
+	// 	var now = new Date().getTime();
+	// 	// Find the distance between now an the count down date
+	// 	var distance = countDownDate - now;
+	// 	// Time calculations for days, hours, minutes and seconds
+	// 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	// 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	// 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	// 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// 	// Display the result in the element with id="demo"
+	// 	document.getElementById("countdown").innerHTML = days + " д. " + hours + " ч. "
+	// 	+ minutes + " м. " + seconds + " с. ";
+	// 	}, 1000);
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -222,24 +228,34 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("#application").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			th.slideUp();
-			$("#payment-area").slideDown();
+	$('#no-payment').click(function () {
+		$("#application").submit(function() { //Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php", //Change
+				data: th.serialize()
+			}).done(function() {
+				th.slideUp();
+				$("#payment-area").html('<p>Вы зарегестрированны, скоро Вам на почту придёт подтверждение.</p><p>Спасибо и до скорой встречи!</p>').slideDown();
+			});
+			return false;
 		});
-		return false;
 	});
-	// $("#application").submit(function() { //Change
-	// 	var th = $(this);
-	// 	th.slideUp();
-	// 	$("#payment-area").slideDown();
-	// 	return false;
-	// });
+	$('#will-pay').click(function () {
+		$("#application").submit(function() { //Change
+			var th = $(this);
+			$.ajax({
+				type: "POST",
+				url: "mail.php", //Change
+				data: th.serialize()
+			}).done(function() {
+				th.slideUp();
+				$("#payment-area").slideDown();
+			});
+			return false;
+		});
+	});
 
 	//Photoswipe
 	var $pswp = $('.pswp')[0];

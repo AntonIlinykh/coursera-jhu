@@ -51,7 +51,7 @@
 	margin: 5px 0
 	text-align: justify
 .divider-text
-	font-family: "Roboto", sans-serif
+	font-family: "RobotoThin", sans-serif
 	font-weight: 100
 	font-size: 30px
 	color: #fff
@@ -131,13 +131,18 @@
 	max-width: 500px
 	margin: 0 auto
 	position: relative
-
+#application
+	h2
+		font-family: "Lora",sefir
+		opacity: .8
 .material
 	position: relative
 	padding: 0
 	margin: 5px 0
 	border: none
 	overflow: visible
+	&:last-of-type
+		margin-bottom: 19px
 	input, select
 		box-sizing: border-box
 		width: 100%
@@ -188,11 +193,17 @@
 	select:focus ~ label,
 	select:valid ~ label
 		transform: scale(0.6)
-
+#action-buttons
+	text-align: center
 .form-button
-	display: block
-	margin: auto
-	margin-top: 20px
+	width: 180px
+	&:last-child
+		margin-top: 10px
+		border: 1px solid $main-color
+	&:first-child
+		color: $main-color
+		background-color: transparent
+		border: 1px solid $main-color
 .game-image-frame
 	position: relative
 	max-width: 500px
@@ -217,14 +228,19 @@
 	position: absolute
 	top: 10px
 	right: -14px
+.free-label
+	top: 45px
+	background-color: #0592FF
+	opacity: .95
 .counter--bundles
 	width: 160px
 	top: 55px
 .section-header
-	font-family: "Roboto", sans-serif
+	font-family: "Lora", sans-serif
 	font-weight: 100
 	font-size: 20px
-	color: #666
+	color: #000
+	opacity: .87
 	text-align: center
 	margin: 0
 .cards, .ordinary-prices
@@ -426,7 +442,7 @@
 			border-bottom: none
 .countdowner
 	text-align: center
-	font-family: Roboto, sans-serif
+	font-family: RobotoThin, sans-serif
 	// font-weight: 900
 	// font-size: 23px
 	border: 1px solid $accent-color
@@ -463,6 +479,7 @@ footer
 	color: #fff
 	.container
 		margin-bottom: 0
+		padding: 20px 0 0
 .footer-legal-info
 	padding-bottom: 10px
 .footer-maintenance
@@ -560,5 +577,6 @@ svg
 			top: 30px
 			font-size: 16px
 			line-height: 1.4
+
 //ALWAYS END
 @import "media"
